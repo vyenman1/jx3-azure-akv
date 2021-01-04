@@ -1,0 +1,10 @@
+apiVersion: core.jenkins-x.io/v4beta1
+kind: Requirements
+spec:
+  cluster:
+    provider: aks
+  environments:
+    - key: dev
+  ingress:
+    tls: {}
+  secretStorage: azurekeyvault
